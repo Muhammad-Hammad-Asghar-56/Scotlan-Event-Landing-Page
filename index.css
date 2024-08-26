@@ -1,0 +1,390 @@
+/* Ensure html and body take full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+@font-face {
+    font-family: 'Omnes SemiBold';
+    src: url('fonts/Omnes SemiBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Omnes Bold';
+    src: url('fonts/Omnes Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Omnes Regular';
+    src: url('fonts/Omnes Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Omnes Black';
+    src: url('fonts/Omnes\ Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/* Page 1 Background Styling */
+#page-1 {
+    height: 100vh; /* Full viewport height */
+    background-image: url('./asserts/G8.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensures image covers the entire div */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    /* background-attachment: fixed; Keeps the background fixed on scroll */
+}
+
+/* NavBar Styling */
+#site-title {
+    font-family: 'Omnes Bold', Arial, sans-serif;
+    color: white;
+    font-size: 18.20px;
+    text-decoration: none;
+}
+
+.container{
+    padding:10px 2rem;
+    background: transparent;
+    height: 100%;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.gap-100{
+    gap:100px;
+}
+#navbar{
+    width: 100%;
+    height: 5%;
+    padding: 2rem 1rem;
+}
+#page-1-body{
+    width: 100%;
+    height: 80%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page-1-body span{
+    font-size:67px;
+    font-family: 'Omnes Bold', Arial, sans-serif;
+}
+
+
+#page-2{
+    padding: 0rem 2rem;
+    background-color: #F5F5F5;
+
+}
+#page-2 h1{
+    text-align: center;
+    font-family: "Omnes Black", Arial, sans-serif;
+    font-size: 43px;
+    text-transform: uppercase;
+}
+.content p{
+    font-family: "Omnes Regular", Arial, sans-serif;
+    font-size: 23px;
+    /* margin-bottom: 1.5em; */
+}
+
+
+.card-container{
+    padding-top: 20px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    justify-content: center;
+    margin: 0px auto;
+}
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0px 10px;
+}
+.item .title{
+    font-family: "Omnes Bold";
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.item p{
+    font-family: "Omnes Regular";
+    font-size: 23px;
+    line-height: 37px;
+    text-align: center;
+}
+.item img{
+    height: 350px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+
+#page-3  .container  h1{
+    text-align: center;
+    font-family: "Omnes Black", Arial, sans-serif;
+    font-size: 43px;
+    text-transform: uppercase;
+
+
+}
+.img-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 10px;
+}
+
+.img-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+#page-4{
+    background-color: #F5F5F5;
+    padding-top: 20px;
+}
+.contact-section{
+    display: flex;
+    gap:40px;
+    flex-direction:row;
+}
+.contact-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.contact-text #title{
+    font-family: "Omnes Black",  Arial, sans-serif;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.contact-text p{
+    font-family: "Omnes Regular",  Arial, sans-serif;
+    max-width: 450px;
+    font-size: 23px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text-box label{
+    font-family: "Omnes Regular",Arial, sans-serif;
+}
+
+.text-box input {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 20px;
+    background-color: #F5F5F5;
+    padding-left: 20px;
+}
+
+.text-box input:focus {
+    border: 2px solid black;
+    outline: none;
+}
+.opacity-low{
+    opacity: 0.7;
+}
+.button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+}
+
+/* Error class styling for empty inputs */
+.error {
+    border: 2px solid #CE2C30;
+    background-color: #CE2C30;
+    color: white;
+    font-family: "Omnes Regular";
+    /* display: flex; */
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    display: none;
+    border-radius: 20px;
+    padding: 2.5px 10px;
+}
+
+
+.footer{
+    padding: 0rem 2rem;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;
+    background-color: #F5F5F5;
+}
+.footer-1{
+    text-transform: uppercase;
+    font-family: "Omnes Black",  Arial, sans-serif;
+    font-size: 30px;
+    margin: 0px 0px;
+}
+.footer-2{
+    font-family: "Omnes Regular",  Arial, sans-serif;
+    font-size: 15px;
+    color:black;
+}
+
+.w-50{
+    width: 90%;
+}
+.w-100{
+    width: 95% !important;
+}
+
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    #page-1-body span{
+        font-size: 50px;
+        text-align: center;
+    }
+    .card-container{
+        padding-top: 20px;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .container{
+        padding:10px 2px;
+    }
+    #page-2{
+        padding: 0rem 10px;
+    }
+    #page-2  h1{
+        font-size: 30px;
+    }
+    #page-3{
+        padding: 0rem 10px;
+    }
+    #page-3  h1{
+        font-size: 30px;
+    }
+    #page-4{
+        padding: 0rem 10px;
+    }
+    #page-4 #title{
+        font-size: 30px;    
+    }
+    #contact-text > p{
+        font-size: 18px;
+        margin-top: 0; 
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .item{
+        max-width: 300px;
+    }
+    .w-50{
+        width: 80%;
+    }
+    .w-100{
+        width: 90% !important;
+    }
+    .img-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        row-gap: 10px;
+    }
+    .footer{
+        padding: 0 10px;
+    }
+    .item .title{
+        font-size: 30px;
+        margin: 0 0;
+    }
+    .item p{
+        font-size: 18px;
+    }
+    .content{
+        font-size: 18px;
+    }
+
+
+    .footer{
+        background-color: #F5F5F5;
+        padding-top: 10px;
+    }
+
+    .footer-1{
+        text-transform: uppercase;
+        font-family: "Omnes Black",  Arial, sans-serif;
+        font-size: 20px;
+        margin: 0px 0px;
+    }
+    .footer-2{
+        font-family: "Omnes Regular",  Arial, sans-serif;
+        font-size: 10px;
+        color:black;
+    }
+
+
+    .contact-text{
+        display: block;
+    }
+}
