@@ -17,8 +17,8 @@ html, body {
 @font-face {
     font-family: 'Omnes Bold';
     src: url('fonts/Omnes Bold.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+    font-weight: 1000;
+    font-style:normal;
 }
 @font-face {
     font-family: 'Omnes Regular';
@@ -85,8 +85,9 @@ html, body {
 }
 #navbar{
     width: 100%;
-    /* height: 5%; */
-    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0rem;
 }
 #navbar>a{
     font-size: 35px;
@@ -418,6 +419,7 @@ html, body {
     }
 }
 @media (min-width:1400px) {   
+    
     #navbar>a{
         font-size: 35px;
     }
@@ -425,7 +427,9 @@ html, body {
     #page-1{
         height: 820px;
     }
-    #navbar,
+    #navbar{
+        padding: 2rem 2rem;
+    }
     #page-1-body .container,
     #page-2 .container,
     #page-3 .container,
@@ -433,6 +437,7 @@ html, body {
     .footer>div{
         width: 1200px;
         margin: 0px auto;
+        /* padding: 0 0; */
         /* padding: 0rem auto; */
     }
 
